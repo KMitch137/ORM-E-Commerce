@@ -7,6 +7,16 @@ class Category extends Model {}
 Category.init(
   {
     // define columns
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      allowNull: false,
+      autoIncriment: true
+    },
+    category_name: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    }
   },
   {
     sequelize,
@@ -18,3 +28,22 @@ Category.init(
 );
 
 module.exports = Category;
+
+
+// Category
+
+//   id
+
+//     Integer.
+
+//     Doesn't allow null values.
+
+//     Set as primary key.
+
+//     Uses auto increment.
+
+//   category_name
+
+//     String.
+
+//     Doesn't allow null values.
