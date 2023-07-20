@@ -29,7 +29,7 @@ router.get('/:id', async (req, res) => {
   // be sure to include its associated Category and Tag data
 
   try {
-    const product = await Product.findByPk({
+    const product = await Product.findOne({
       where: {
         id: req.params.id,
       },
